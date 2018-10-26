@@ -1,5 +1,9 @@
 #Bash notes
-#Todo Check for / Run npm install express-generator -g
+if ! npm list --depth 1 --global express-generator >/dev/null 2>&1; then
+  echo 'installing express generator globally'
+  npm install express-generator -g
+fi
+
 express server
 
 mkdir server/config
@@ -47,3 +51,5 @@ npm install config --save
 npm install body-parser --save
 npm install cors --save
 npm install dotenv --save
+
+npm run local:server
