@@ -6,7 +6,7 @@ Currently using Mac `sed` syntax (bsd + others use at own risk)
 
 Currently using zsh
 
-#This will install express generator globally
+# This will install express generator globally
 
 activate this from the command line with
 
