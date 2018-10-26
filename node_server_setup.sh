@@ -15,7 +15,7 @@ echo '{\n  "env": "NODE_ENV",\n  "port": "PORT"\n}' >> server/config/custom-envi
 echo 'PORT=3001' >> server/config/.env
 echo '*\n!.gitignore' >> server/docs/.gitignore
 
-curl https://raw.githubusercontent.com/DLittle123/base-ignore/master/node_ignore >> .gitignore
+curl https://raw.githubusercontent.com/DLittle123/base-templates/master/node_ignore >> .gitignore
 
 sed -i '' -e "1i \\
 require('dotenv').config({ path: './config/.env' });
