@@ -51,5 +51,6 @@ npm install config --save
 npm install body-parser --save
 npm install cors --save
 npm install dotenv --save
+npm install axios --save
 
 npm run local:server
