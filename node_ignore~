@@ -4,7 +4,7 @@
 npm-debug.log
 node_modules/
 ./client/node_modules
-server/config/local.json
+server/config/devlocal.json
 server/config/.env
 nohup.out
 .DS_STORE
