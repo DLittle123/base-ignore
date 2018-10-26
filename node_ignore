@@ -1,0 +1,17 @@
+./server/data/*
+.idea/
+
+npm-debug.log
+node_modules/
+./client/node_modules
+server/config/devlocal.json
+server/config/.env
+nohup.out
+.DS_STORE
+*/.DS_STORE
+
+# Generated js bundles
+/app/assets/webpack/*
+
+# Generated css bundles
+/client/src/css/*
