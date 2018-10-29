@@ -17,6 +17,14 @@ pip install python-dotenv
 
 pip freeze > requirements.txt
 
+curl https://raw.githubusercontent.com/DLittle123/base-templates/master/flask_ignore  >> .gitignore
+
+echo "# Requirements \
+Python3.6.3 \
+\
+pip install -r requirements.txt\
+FLASK_APP=$(app).py FLASK_ENV=development ENV=local flask run" >> README.md
+
 mkdir server
 read app
 echo "Name of application : $(app)"
@@ -32,4 +40,8 @@ touch controllers/__init__.py
 echo '[Example]\nA: 2\nB: False' >> local.py
 echo '[Example]\nB: True\nC: Code' >> default.py
 
- >> server/__init__.py
+curl https://raw.githubusercontent.com/DLittle123/base-templates/master/flask_files/base_init.py  >> __init__.py
+curl https://raw.githubusercontent.com/DLittle123/base-templates/master/flask_files/base_routes.py  >> routes.py
+
+cd ..
+FLASK_APP=$app.py FLASK_ENV=development ENV=local flask run
