@@ -14,6 +14,7 @@ source venv/bin/activate
 
 pip install flask
 pip install python-dotenv
+pip install requests
 
 pip freeze > requirements.txt
 
