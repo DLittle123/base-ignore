@@ -30,4 +30,4 @@ activate this from the command line with
 
 currently working with python 3.6.3
 
-`curl https://raw.githubusercontent.com/DLittle123/base-templates/master/flask_server_setup.sh | zsh`
+`curl https://raw.githubusercontent.com/DLittle123/base-templates/master/flask_server_setup.sh | APP=your_app_name_here zsh`

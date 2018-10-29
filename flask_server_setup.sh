@@ -37,8 +37,8 @@ echo 'TEST=foo' >> config/.env
 touch config/__init__.py
 touch models/__init__.py
 touch controllers/__init__.py
-echo '[Example]\nA: 2\nB: False' >> local.py
-echo '[Example]\nB: True\nC: Code' >> default.py
+echo '[Example]\nA: 2\nB: False' >> config/local.py
+echo '[Example]\nB: True\nC: Code' >> config/default.py
 
 curl https://raw.githubusercontent.com/DLittle123/base-templates/master/flask_files/base_init.py  >> __init__.py
 curl https://raw.githubusercontent.com/DLittle123/base-templates/master/flask_files/base_routes.py  >> routes.py
