@@ -23,12 +23,12 @@ echo "# Requirements \
 Python3.6.3 \
 \
 pip install -r requirements.txt\
-FLASK_APP=$(app).py FLASK_ENV=development ENV=local flask run" >> README.md
+FLASK APP=$APP.py FLASK_ENV=development ENV=local flask run" >> README.md
 
 mkdir server
-read app
-echo "Name of application : $(app)"
-echo 'from server import server' >> $app.py
+
+echo "Name of application : $APP"
+echo 'from server import server' >> $APP.py
 cd server
 mkdir config
 mkdir models
@@ -44,4 +44,4 @@ curl https://raw.githubusercontent.com/DLittle123/base-templates/master/flask_fi
 curl https://raw.githubusercontent.com/DLittle123/base-templates/master/flask_files/base_routes.py  >> routes.py
 
 cd ..
-FLASK_APP=$app.py FLASK_ENV=development ENV=local flask run
+FLASK_APP=$APP.py FLASK_ENV=development ENV=local flask run
