@@ -1,0 +1,10 @@
+__pycache__/
+server/__pycache__
+venv/
+.DS_Store
+server/config/.env
+
+server/initial_data_load/db_dump*
+
+.idea/
+
